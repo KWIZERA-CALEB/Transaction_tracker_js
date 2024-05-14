@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        .error{
+            background-color: brown;
+            border-radius: 2px;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 6px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 400px; padding: 5px;">
+        <div style="font-size: 30px; font-weight: bold; margin: 8px; text-align: center;">Add Customers</div>
+        <form action="" id="login-form">
+            <div style="display: flex;">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="submit" id="search-btn">Search</button>
+            </div>
+            <div>
+                <ul id="search-results"></ul>
+            </div>
+            <div id="msg"></div>
+
+            <div>
+                <input type="text" style="width: 100%;" id="name" placeholder="Name">
+            </div>
+            <div>
+                <input type="text" style="width: 100%;" id="email" placeholder="Phone Number">
+            </div>
+            <div>
+                <input type="text" style="width: 100%;" id="amount" placeholder="Amount">
+            </div>
+            <div>
+                <button type="submit" style="width: 100%; margin-left: 10px;" id="submit">Add Customer</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" style="width: 400px; padding: 5px;">
+        <ul id="users"></ul>
+    </div>
+
+   
+    <script src="index.js"></script>
+</body>
+</html>
