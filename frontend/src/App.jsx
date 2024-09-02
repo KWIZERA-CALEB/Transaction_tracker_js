@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import Notfound from './pages/Notfound'
 
 
 function App() {
@@ -6,7 +9,10 @@ function App() {
 
   return (
     <>
-      
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='*' element={<Notfound />} />
+      </Routes>
     </>
   )
 }
