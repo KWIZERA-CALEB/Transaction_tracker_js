@@ -39,9 +39,9 @@ const Footer = () => {
         )
     ))
   return (
-    <>
+    <div className='mt-[30px]'>
         <div className='border-[1px] border-solid border-slate-200'></div>
-        <div className='w-full grid grid-cols-4 drop-shadow-md gap-[4px] pr-[16px] pl-[16px] pt-[60px] pb-[60px]'>
+        <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 drop-shadow-md gap-[8px] md:gap-[4px] pr-[16px] pl-[16px] pt-[60px] pb-[60px]'>
 
             <div className='flex flex-col items-start'>
                 <div className='flex flex-row space-x-[6px] items-center'>
@@ -52,8 +52,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p className='poppinsBold text-[15px] pl-[8px] cursor-pointer'>OUR MISSION</p>
-                    <p className='poppinsRegular text-[12px] pl-[8px] cursor-pointer'>
+                    <p className='poppinsBold text-[15px] lg:pl-[8px] cursor-pointer'>OUR MISSION</p>
+                    <p className='poppinsRegular text-[12px] lg:pl-[8px] cursor-pointer'>
                         Providing inclusive and Wholistic education grounded in Christian values<br></br> enabling our students to be good Christians and good citizens.
                     </p>
                 </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
 
         </div>
-    </>
+    </div>
   )
 }
 

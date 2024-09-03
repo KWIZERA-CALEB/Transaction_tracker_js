@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Button from '../atoms/Button'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
+import { AlignJustify } from 'lucide-react';
 
 const Navigation = () => {
     const currentPath = useLocation()
@@ -40,13 +41,16 @@ const Navigation = () => {
   return (
     <div className='w-full h-[70px] pl-[16px] pr-[16px] bg-white drop-shadow-md flex flex-row justify-between items-center fixed z-40 top-0'>
       <div className='flex flex-row space-x-[6px] items-center'>
-        <img src="/images/logos/logo.png" className='w-[60px]' alt="Logo" />
-        <div>
+        <img src="/images/logos/logo.png" className='w-[40px] md:w-[60px]' alt="Logo" />
+        <div className='hidden md:block'>
             <p className='poppinsBold text-[15px] cursor-pointer'>GSO BUTARE</p>
             <p className='poppinsRegular text-[6px] cursor-pointer'>S'INSTRUIRE POUR MIEUX SERVIR</p>
         </div>
+        <div className='block md:hidden'>
+            <AlignJustify className='cursor-pointer' size={18} />
+        </div>
       </div>
-      <div>
+      <div className='hidden md:block'>
         <ul className='flex flex-row space-x-[20px]'>
             {appendNavLinks}
         </ul>
