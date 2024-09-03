@@ -4,6 +4,10 @@ import { Helmet } from 'react-helmet'
 import Hero from '../components/molecules/Hero'
 import Preloader from '../components/atoms/Preloader'
 import Footer from '../components/molecules/Footer'
+import OverviewCounting from '../components/molecules/OverviewCounting'
+import About from '../components/organisms/About'
+import PrincipalMessage from '../components/organisms/PrincipalMessage'
+import ShortNews from '../components/molecules/ShortNews'
 
 
 const HomePage = () => {
@@ -26,7 +30,10 @@ const HomePage = () => {
       {showPreloader && <Preloader />}
       <Navigation />
       <Hero />
-      <div className='mt-[30px] mb-[30px]'></div>
+      <About />
+      <OverviewCounting />
+      <PrincipalMessage />
+      <ShortNews />
       <Footer />
     </>
   )
