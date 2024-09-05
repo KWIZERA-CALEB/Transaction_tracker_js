@@ -6,7 +6,7 @@ const PrincipalMessage = () => {
       <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Principal's Message</p></div>
       <div className='pr-[25px] pb-[25px] pl-[25px] w-full flex flex-col md:flex-row'>
         <div className='w-full md:w-[50%] flex flex-col items-center justify-center bg-slate-200 p-[20px]'>
-            <img src="https://calebkwizera.vercel.app/images/yoo.jpg" className='w-[150px] h-[150px] rounded-[50%] object-fit object-[50% 50%] cursor-pointer' alt="About School" />
+            <img src="https://calebkwizera.vercel.app/images/yoo.jpg" className='w-[150px] h-[150px] rounded-[50%] object-cover object-center cursor-pointer' alt="About School" />
             <div className='mt-[10px]'>
                 <p className='poppinsBold text-[15px] cursor-pointer'>Caleb Kwizera</p>
                 <p className='poppinsRegular text-[12px] cursor-pointer'>Head Teacher</p>
