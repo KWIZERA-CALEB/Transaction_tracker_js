@@ -17,10 +17,16 @@ const Extracurricular = () => {
         </div>
       </div>
 
-      <div>
-        <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Sports at GSOB</p></div>
-        <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Clubs at GSOB</p></div>
-
+      <div className='mt-[30px]'>
+        <div className='pr-[25px] pl-[25px]'>
+          <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Sports</p></div>
+          <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[4px]'>
+            <div className='rounded-full border-slate-200 border-solid border-[2px] p-[20px]'></div>
+            <div className='rounded-full border-slate-200 border-solid border-[2px] p-[20px]'></div>
+            <div className='rounded-full border-slate-200 border-solid border-[2px] p-[20px]'></div>
+            <div className='rounded-full border-slate-200 border-solid border-[2px] p-[20px]'></div>
+          </div>
+        </div>
       </div>
 
       <Footer />
