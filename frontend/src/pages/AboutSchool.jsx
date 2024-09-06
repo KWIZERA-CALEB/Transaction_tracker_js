@@ -20,8 +20,10 @@ const AboutSchool = () => {
       <About />
 
       <div>
-        <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Alumini</p></div>
-
+        <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Our Location</p></div>
+        <div className='w-full'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14226.089000840064!2d30.123787599999996!3d-1.9706969500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca7b0a3c391f5%3A0x22cc83060ed1bf2c!2sKabeza%2C%20Kigali!5e1!3m2!1sen!2srw!4v1725632245994!5m2!1sen!2srw" width="100%" height="450" className='pr-[25px] pl-[25px]' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
       <Footer />

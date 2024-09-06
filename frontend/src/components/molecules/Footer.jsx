@@ -101,6 +101,13 @@ const Footer = () => {
             </div>
 
         </div>
+        <div>
+            <p className='poppinsMedium text-slate-600 text-center text-[12px] cursor-pointer'>Developed By <span className='text-secondary'><a href="https://calebkwizera.vercel.app" target='_blank'>Caleb Kwizera</a></span></p>
+        </div>
+        <div className='border-[1px] border-solid border-slate-200 mt-[4px]'></div>
+        <div className='p-[10px]'>
+            <p className='poppinsMedium text-slate-600 text-center text-[12px] cursor-pointer'>&copy; {new Date().getFullYear()} GSOB All Rights reserved.</p>
+        </div>
     </div>
   )
 }
