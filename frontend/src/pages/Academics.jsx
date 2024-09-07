@@ -32,31 +32,46 @@ const Academics = () => {
               <div>
                 <img src="/images/banner1.jfif" className='w-full h-[170px] object-cover object-center rounded-[20px]' alt="MPC" />
               </div>
-              <div className='p-[20px]'><p className='poppinsBold text-[15px] cursor-pointer'>MPC</p></div>
+              <div className='p-[20px]'>
+                <p className='poppinsBold text-[15px] cursor-pointer'>MPC</p>
+                <p className='poppinsMedium text-[13px] cursor-pointer'>Math-Physics-Computer Science</p>
+              </div>
             </div>
             <div className='rounded-[20px] border-slate-200 border-solid border-[2px]'>
               <div>
                 <img src="/images/banner1.jfif" className='w-full h-[170px] object-cover object-center rounded-[20px]' alt="MPC" />
               </div>
-              <div className='p-[20px]'><p className='poppinsBold text-[15px] cursor-pointer'>PCM</p></div>
+              <div className='p-[20px]'>
+                <p className='poppinsBold text-[15px] cursor-pointer'>PCM</p>
+                <p className='poppinsMedium text-[13px] cursor-pointer'>Physics-Chemistry-Math</p>
+              </div>
             </div>
             <div className='rounded-[20px] border-slate-200 border-solid border-[2px]'>
               <div>
                 <img src="/images/banner1.jfif" className='w-full h-[170px] object-cover object-center rounded-[20px]' alt="MPC" />
               </div>
-              <div className='p-[20px]'><p className='poppinsBold text-[15px] cursor-pointer'>PCB</p></div>
+              <div className='p-[20px]'>
+                <p className='poppinsBold text-[15px] cursor-pointer'>PCB</p>
+                <p className='poppinsMedium text-[13px] cursor-pointer'>Physics-Chemistry-Biology</p>
+              </div>
             </div>
             <div className='rounded-[20px] border-slate-200 border-solid border-[2px]'>
               <div>
                 <img src="/images/banner1.jfif" className='w-full h-[170px] object-cover object-center rounded-[20px]' alt="MPC" />
               </div>
-              <div className='p-[20px]'><p className='poppinsBold text-[15px] cursor-pointer'>ANP</p></div>
+              <div className='p-[20px]'>
+                <p className='poppinsBold text-[15px] cursor-pointer'>ANP</p>
+                <p className='poppinsMedium text-[13px] cursor-pointer'>Associate-Nursing-Programme</p>
+              </div>
             </div>
             <div className='rounded-[20px] border-slate-200 border-solid border-[2px]'>
               <div>
                 <img src="/images/banner1.jfif" className='w-full h-[170px] object-cover object-center rounded-[20px]' alt="MPC" />
               </div>
-              <div className='p-[20px]'><p className='poppinsBold text-[15px] cursor-pointer'>MCB</p></div>
+              <div className='p-[20px]'>
+                <p className='poppinsBold text-[15px] cursor-pointer'>MCB</p>
+                <p className='poppinsMedium text-[13px] cursor-pointer'>Math-Chemistry-Biology</p>
+              </div>
             </div>
 
             

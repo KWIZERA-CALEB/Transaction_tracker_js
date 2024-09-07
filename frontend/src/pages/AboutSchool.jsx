@@ -4,6 +4,8 @@ import Navigation from '../components/molecules/Navigation'
 import Footer from '../components/molecules/Footer'
 import About from '../components/organisms/About'
 
+
+
 const AboutSchool = () => {
   return (
     <>

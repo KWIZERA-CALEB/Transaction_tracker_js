@@ -1,9 +1,18 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils/variants'
 
 const PrincipalMessage = () => {
   return (
     <div className='mt-[30px]'>
-      <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Principal's Message</p></div>
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{once: false, amount: 0.7}} 
+        className='pb-[15px]'>
+        <p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>Principal's Message</p>
+      </motion.div>
       <div className='pr-[25px] pb-[25px] pl-[25px] w-full flex flex-col md:flex-row'>
         <div className='w-full md:w-[50%] flex flex-col items-center justify-center bg-slate-200 p-[20px]'>
             <img src="https://calebkwizera.vercel.app/images/yoo.jpg" className='w-[150px] h-[150px] rounded-[50%] object-cover object-center cursor-pointer' alt="About School" />
