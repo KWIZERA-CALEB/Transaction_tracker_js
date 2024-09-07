@@ -6,6 +6,8 @@ import Academics from './pages/Academics'
 import AboutSchool from './pages/AboutSchool'
 import Extracurricular from './pages/Extracurricular'
 import SchoolUpdates from './pages/SchoolUpdates'
+import AdminLogin from './pages/AdminLogin'
+import SingleEvent from './pages/SingleEvent'
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path='/school' element={<AboutSchool />} />
         <Route path='/extracurricular' element={<Extracurricular />} />
         <Route path='/updates' element={<SchoolUpdates />} />
+        <Route path='/login' element={<AdminLogin />} />
+        <Route path='/event' element={<SingleEvent />} />
       </Routes>
     </>
   )

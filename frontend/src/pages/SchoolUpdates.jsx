@@ -50,7 +50,7 @@ const SchoolUpdates = () => {
                     <p className='poppinsRegular text-[12px] cursor-pointer'>
                         {news.description}
                     </p>
-                    <Link className='poppinsRegular mt-[4px] text-[12px] text-secondary'>View More</Link>
+                    <Link to={'/event'} className='poppinsRegular mt-[4px] text-[12px] text-secondary'>View More</Link>
                 </div>
             </div>
         )

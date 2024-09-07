@@ -1,9 +1,19 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils/variants'
 
 const About = () => {
   return (
     <div>
-      <div className='pb-[15px]'><p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>About GSO Butare</p></div>
+      <motion.div
+        variants={fadeIn('up', 0.2)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{once: false, amount: 0.7}}
+       className='pb-[15px]'>
+        <p className='poppinsBold text-[18px] text-center text-primaryGray cursor-pointer'>About GSO Butare</p>
+      </motion.div>
+
       <div className='pr-[25px] pb-[25px] pl-[25px] w-full flex flex-col md:flex-row'>
         <div className='w-full md:w-[50%] mt-[10px] md:mt-[-10px] md:p-[20px]'>
             <p className='poppinsRegular cursor-pointer select-none text-start text-[14px]'>

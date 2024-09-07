@@ -10,6 +10,7 @@ import PrincipalMessage from '../components/organisms/PrincipalMessage'
 import ShortNews from '../components/molecules/ShortNews'
 
 
+
 const HomePage = () => {
   const [showPreloader, setShowPreloader] = useState(true)
 
