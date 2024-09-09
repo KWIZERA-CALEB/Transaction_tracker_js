@@ -8,6 +8,7 @@ import Extracurricular from './pages/Extracurricular'
 import SchoolUpdates from './pages/SchoolUpdates'
 import AdminLogin from './pages/AdminLogin'
 import SingleEvent from './pages/SingleEvent'
+import AdminManage from './pages/AdminManage'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/updates' element={<SchoolUpdates />} />
         <Route path='/login' element={<AdminLogin />} />
         <Route path='/event' element={<SingleEvent />} />
+        <Route path='/admin/manage' element={<AdminManage />} />
       </Routes>
     </>
   )
