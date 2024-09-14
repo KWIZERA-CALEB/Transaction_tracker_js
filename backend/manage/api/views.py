@@ -7,9 +7,13 @@ from .serializers import EventSerializer, ContactMessageSerializer
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
-        'GET /events',
-        'POST /add-event',
-        'GET /event'
+        'GET /routes/',
+        'POST /add-event/',
+        'GET /events/',
+        'GET /event/<str:pk>/',
+        'GET /featured-events/',
+        'POST /send-message/',
+        'GET /contact-messages/'
     ]
 
     return Response(routes)

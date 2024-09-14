@@ -24,7 +24,7 @@ function App() {
         <Route path='/extracurricular' element={<Extracurricular />} />
         <Route path='/updates' element={<SchoolUpdates />} />
         <Route path='/login' element={<AdminLogin />} />
-        <Route path='/event' element={<SingleEvent />} />
+        <Route path='/event/:id' element={<SingleEvent />} />
         <Route path='/admin/manage' element={<AdminManage />} />
       </Routes>
     </>
