@@ -1,36 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { fetchAllEvents } from '../../services/EventService'
 
 const ShortNews = () => {
-    const news = [
-        {
-            image: "/images/banner1.jfif",
-            title: "Basket Ball",
-            description: "Providing inclusive and Wholistic education grounded in Christian values..."
-        },
-        {
-            image: "/images/banner1.jfif",
-            title: "Basket Ball",
-            description: "Providing inclusive and Wholistic education grounded in Christian values..."
-        },
-        {
-            image: "/images/banner1.jfif",
-            title: "Basket Ball",
-            description: "Providing inclusive and Wholistic education grounded in Christian values..."
-        },
-        {
-            image: "/images/banner1.jfif",
-            title: "Basket Ball",
-            description: "Providing inclusive and Wholistic education grounded in Christian values..."
-        },
-    ]
+    const [news, setNews] = useState([])
+    useEffect(() => {
+        const getFectchedBooks = async () => {
+            try {
+                const response = await fetchAllEvents()
+                setNews(response.events)
+            } catch(error) {
+                console.log(error)
+                throw error
+            }
+        }
+        getFectchedBooks()
+    }, [])
 
     const appendedNews = []
     news.map((news, index) => (
         appendedNews.push(
             <div key={index} className='drop-shadow-md border-[1px] border-solid cursor-pointer border-slate-200 p-[6px]'>
                 <div className='w-full h-[170px]'>
-                    <img src={news.image} className='w-full h-full object-fit object-center' alt="Post" />
+                    <img src='/images/banner1.jfif' className='w-full h-full object-fit object-center' alt="Post" />
                 </div>
                 <div className='mt-[10px]'>
                     <p className='poppinsBold text-[15px] cursor-pointer'>{news.title}</p>
